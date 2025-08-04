@@ -338,7 +338,7 @@ browser
 : "${selected_browser:=xdg-open}"
 
 Selecte_Mode () {
-
+while true; do
 	read -p $'selecte a category to learn new things\n1 - Research Sources\n2 - Linux Practice\n3 - Cubing Practice\n4 - Chess Practice\n5 - Typing Practice\n6 - Movies Sources\n7 - Anime Sources\n8 - Note Sources\nEnter number:' category
 
 	case $category in 
@@ -370,6 +370,8 @@ Selecte_Mode () {
 			Note_sources
 		;;
 esac
+
+done
 }
 Selecte_Mode
 
